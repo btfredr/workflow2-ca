@@ -1,0 +1,8 @@
+{
+  "name": "workflow2-ca",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/btfredr/workflow2-ca.git",
+  "author": "Fredrik <fredrikf2000@gmail.com>",
+  "license": "MIT"
+}
