@@ -1,114 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="./css/master.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Welcome to our contact page. Our aim is to make getting in contact with us as easy as possible." />
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/master.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Welcome to our contact page. Our aim is to make getting in contact with us as easy as possible." />
     <title>SpaceX - Contact Us</title>
 </head>
+
 <body>
-            <nav class ="topNavigation">
-                    
-                <div class="logo">
-                    <a href="index.html"><img src="images/spacex-logo.png" class="logo" alt="SpaceX Logo"></a>
-                </div>
+    <nav class="topNavigation">
 
-                <a href="#" class="menu-button">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </a>
-                <div class="topNavigation-items">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html" class="active">Contact</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                    </ul>
-                </div>
-            </nav>
+        <div class="logo">
+            <a href="index.html"><img src="images/spacex-logo.png" class="logo" alt="SpaceX Logo"></a>
+        </div>
 
-      <div class="background-container">
+        <a href="#" class="menu-button">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </a>
+        <div class="topNavigation-items">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="background-container">
 
         <main>
             <div class="box-wrapper2">
                 <div class="box-mainContact">
-                        <div class="text">
+                    <div class="text">
                         <h1 class="font">Want to get in contact with us at SpaceX?</h1>
-    
-    
-    
-                            <div class="contact-container">
-                                <form id="contactForm">
-                                    <div class="form-section">
-                                        
-                                        <div class="contact-text">
-                                            <p class = "font-size">Welcome to our contact page, this is for the people who want to get in touch with us if your questions haven't already been answered elsewhere.</p>
-                                                <div class="contactImageContainer">
-                                                    <img class = "contact-image" src="images/spacex-crew.jpg" alt="SpaceX Crew">
-                                                </div>
+
+
+
+                        <div class="contact-container">
+                            <form id="contactForm">
+                                <div class="form-section">
+
+                                    <div class="contact-text">
+                                        <p class="font-size">Welcome to our contact page, this is for the people who
+                                            want to get in touch with us if your questions haven't already been answered
+                                            elsewhere.</p>
+                                        <div class="contactImageContainer">
+                                            <img class="contact-image" src="images/spacex-crew.jpg" alt="SpaceX Crew">
                                         </div>
-    
-                                        <input class="form-control" name="firstName" id="firstName" placeholder="First name">
-                                        <div class="form-error" id="firstNameError">Please enter your first name</div>
                                     </div>
-                    
-                                    <div class="form-section">
-                                        <input class="form-control" name="lastName" id="lastName" placeholder="Last name">
-                                        <div class="form-error" id="lastNameError">Please enter your last name</div>
+
+                                    <input class="form-control" name="firstName" id="firstName"
+                                        placeholder="First name">
+                                    <div class="form-error" id="firstNameError">Please enter your first name</div>
+                                </div>
+
+                                <div class="form-section">
+                                    <input class="form-control" name="lastName" id="lastName" placeholder="Last name">
+                                    <div class="form-error" id="lastNameError">Please enter your last name</div>
+                                </div>
+
+                                <div class="form-section">
+                                    <input class="form-control" name="email" id="email" placeholder="Email">
+                                    <div class="form-error" id="emailError">Please enter your email address</div>
+                                    <div class="form-error" id="invalidEmailError">Please enter a valid email address
                                     </div>
-                    
-                                    <div class="form-section">
-                                        <input class="form-control" name="email" id="email" placeholder="Email">
-                                        <div class="form-error" id="emailError">Please enter your email address</div>
-                                        <div class="form-error" id="invalidEmailError">Please enter a valid email address</div>
-                                    </div>
-                    
-                                    <div class="form-section">
-                                        <textarea class="form-control" name="message" id="message" placeholder="Message (at least 10 characters)"></textarea>
-                                        <div class="form-error" id="messageError">The message must be at least 10 characters.</div>
-                                    </div>
-                                    <button type="submit" class="contact-btn" id="submit">Submit</button>
-                                    <p class="font-size">For inquiries about our private passenger program, contact <a href=mailto:<nowiki>sales@spacex.com</a>.</p>
-                                    
-                                </form>
-                            </div>
+                                </div>
+
+                                <div class="form-section">
+                                    <textarea class="form-control" name="message" id="message"
+                                        placeholder="Message (at least 10 characters)"></textarea>
+                                    <div class="form-error" id="messageError">The message must be at least 10
+                                        characters.</div>
+                                </div>
+                                <button type="submit" class="contact-btn" id="submit">Submit</button>
+                                <p class="font-size">For inquiries about our private passenger program, contact <a
+                                        href=mailto:<nowiki>sales@spacex.com</a>.</p>
+
+                            </form>
                         </div>
                     </div>
-                        <div class="box-mainContact2">
-                            <div class="text-background">
-                                <div class="text">
-                                    <h1 class="font">Mars and Beyond</h1>
-                                    <p class="font-size"><q><i>You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars.</i></q>
-                                        <br>
-                                        <br>
-                                        - Elon Musk</p>
-                                    <div class="contactImageContainer">
-                                        <img class = "contact-image" src="images/spacex-tech.jpg" alt="SpaceX tech">
-                                    </div>
-                                    
+                </div>
+                <div class="box-mainContact2">
+                    <div class="text-background">
+                        <div class="text">
+                            <h1 class="font">Mars and Beyond</h1>
+                            <p class="font-size"><q><i>You want to wake up in the morning and think the future is going
+                                        to be great - and that’s what being a spacefaring civilization is all about.
+                                        It’s about believing in the future and thinking that the future will be better
+                                        than the past. And I can’t think of anything more exciting than going out there
+                                        and being among the stars.</i></q>
+                                <br>
+                                <br>
+                                - Elon Musk
+                            </p>
+                            <div class="contactImageContainer">
+                                <img class="contact-image" src="images/spacex-tech.jpg" alt="SpaceX tech">
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-        
-        
 
-      <footer class="footer">
+
+
+        <footer class="footer">
             <div class="container">
 
                 <div class="ct-footer-meta text-center-sm">
                     <div class="row">
                         <div class="col-sm-6 col-md-3">
-                            <a href="index.html"><img src="images/spacex-logo.png" class="logo-footer" alt="SpaceX logo"></a>  
+                            <a href="index.html"><img src="images/spacex-logo.png" class="logo-footer"
+                                    alt="SpaceX logo"></a>
                         </div>
                         <br>
                         <div class="social-icons">
-                        <a href="https://www.instagram.com/spacex/" target="_blank"><img alt="instagram" src="./images/instagrambl.png"></a>
-                        <a href="https://twitter.com/spacex" target="_blank"><img alt="instagram" src="./images/twitterbl.png"></a>
-                        <a href="https://www.youtube.com/spacex" target="_blank"><img alt="SpaceX YouTube" src="./images/youtubebl.png"></a>
+                            <a href="https://www.instagram.com/spacex/" target="_blank"><img alt="instagram"
+                                    src="./images/instagrambl.png"></a>
+                            <a href="https://twitter.com/spacex" target="_blank"><img alt="instagram"
+                                    src="./images/twitterbl.png"></a>
+                            <a href="https://www.youtube.com/spacex" target="_blank"><img alt="SpaceX YouTube"
+                                    src="./images/youtubebl.png"></a>
                         </div>
                     </div>
                 </div>
@@ -117,12 +136,13 @@
                 <div class="footer-text">
                     <p class="font-size">Made by Fredrik Fordelsen</p>
                 </div>
-                </div>
             </div>
-        </footer>
+    </div>
+    </footer>
 
 
 
-    <script src="js/script.js"></script>
+    <script src="./js/index.js"></script>
 </body>
+
 </html>
