@@ -30,8 +30,8 @@ const contactForm: Element = document.querySelector("#contactForm");
 contactForm.addEventListener("submit", validateContactForm);
 
 // Checking the values that the user inputs, and displaying an error message if they don't meet the requirements
-function validateContactForm() {
-    this.preventDefault();
+function validateContactForm(e: any) {
+    e.preventDefault();
     console.log("The form was submitted");
 
     // First name
@@ -40,9 +40,9 @@ function validateContactForm() {
     const firstNameValue: string = firstName.value;
 
     if (checkInputLength(firstNameValue) === true) {
-        firstNameError.style.display = "none";
+        (<HTMLElement>document.querySelector('#firstNameError')).style.display = 'none';
     } else {
-        firstNameError.style.display = "block";
+        (<HTMLElement>document.querySelector('#firstNameError')).style.display = 'block';
     };
 
     // Last name
@@ -51,9 +51,9 @@ function validateContactForm() {
     const lastNameValue: string = lastName.value;
 
     if (checkInputLength(lastNameValue) === true) {
-        lastNameError.style.display = "none";
+        (<HTMLElement>document.querySelector('#lastNameError')).style.display = 'none';
     } else {
-        lastNameError.style.display = "block";
+        (<HTMLElement>document.querySelector('#lastNameError')).style.display = 'block';
     };
 
     // Email address:
@@ -63,15 +63,15 @@ function validateContactForm() {
     const emailValue: any = email.value;
 
     if (checkInputLength(emailValue) === true) {
-        emailError.style.display = "none";
+        (<HTMLElement>document.querySelector('#emailError')).style.display = 'none';
     } else {
-        emailError.style.display = "block";
+        (<HTMLElement>document.querySelector('#emailError')).style.display = 'block';
     };
 
     if (validateEmail(emailValue) === true) {
-        invalidEmailError.style.display = "none";
+        (<HTMLElement>document.querySelector('#invalidEmailError')).style.display = 'none';
     } else {
-        invalidEmailError.style.display = "block";
+        (<HTMLElement>document.querySelector('#invalidEmailError')).style.display = 'block';
     };
 
     // Error message:
@@ -80,9 +80,9 @@ function validateContactForm() {
     const messageValue: string = message.value;
 
     if (checkInputLengthMessage(messageValue) === true) {
-        messageError.style.display = "none";
+        (<HTMLElement>document.querySelector('#messageError')).style.display = 'none';
     } else {
-        messageError.style.display = "block";
+        (<HTMLElement>document.querySelector('#messageError')).style.display = 'block';
     };
 };
 
@@ -114,6 +114,6 @@ function checkInputLengthMessage(value: string) {
 
 // Checking that the email address is valid
 function validateEmail(email: string) {
-    const regEx = /\S+@\S+\.\S+/;
+    const regEx: RegExp = /\S+@\S+\.\S+/;
     return regEx.test(email);
 };
