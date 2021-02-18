@@ -23,9 +23,7 @@ function validateContactForm(e) {
     e.preventDefault();
     console.log("The form was submitted");
     // First name
-    var firstName = document.querySelector("#firstName");
-    var firstNameError = document.querySelector("#firstNameError");
-    var firstNameValue = firstName.value;
+    var firstNameValue = document.querySelector('#firstName').value;
     if (checkInputLength(firstNameValue) === true) {
         document.querySelector('#firstNameError').style.display = 'none';
     }
@@ -34,9 +32,7 @@ function validateContactForm(e) {
     }
     ;
     // Last name
-    var lastName = document.querySelector("#lastName");
-    var lastNameError = document.querySelector("#lastNameError");
-    var lastNameValue = lastName.value;
+    var lastNameValue = document.querySelector('#lastName').value;
     if (checkInputLength(lastNameValue) === true) {
         document.querySelector('#lastNameError').style.display = 'none';
     }
@@ -45,10 +41,7 @@ function validateContactForm(e) {
     }
     ;
     // Email address:
-    var email = document.querySelector("#email");
-    var emailError = document.querySelector("#emailError");
-    var invalidEmailError = document.querySelector("#invalidEmailError");
-    var emailValue = email.value;
+    var emailValue = document.querySelector('#email').value;
     if (checkInputLength(emailValue) === true) {
         document.querySelector('#emailError').style.display = 'none';
     }
@@ -64,9 +57,7 @@ function validateContactForm(e) {
     }
     ;
     // Error message:
-    var message = document.querySelector("#message");
-    var messageError = document.querySelector("#messageError");
-    var messageValue = message.value;
+    var messageValue = document.querySelector('#message').value;
     if (checkInputLengthMessage(messageValue) === true) {
         document.querySelector('#messageError').style.display = 'none';
     }

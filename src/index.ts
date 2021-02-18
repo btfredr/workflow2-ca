@@ -35,9 +35,7 @@ function validateContactForm(e: any) {
     console.log("The form was submitted");
 
     // First name
-    const firstName: Element = document.querySelector("#firstName");
-    const firstNameError: Element = document.querySelector("#firstNameError");
-    const firstNameValue: string = firstName.value;
+    const firstNameValue = (<HTMLInputElement>document.querySelector('#firstName')).value;
 
     if (checkInputLength(firstNameValue) === true) {
         (<HTMLElement>document.querySelector('#firstNameError')).style.display = 'none';
@@ -46,9 +44,7 @@ function validateContactForm(e: any) {
     };
 
     // Last name
-    const lastName: Element = document.querySelector("#lastName");
-    const lastNameError: Element = document.querySelector("#lastNameError");
-    const lastNameValue: string = lastName.value;
+    const lastNameValue = (<HTMLInputElement>document.querySelector('#lastName')).value;
 
     if (checkInputLength(lastNameValue) === true) {
         (<HTMLElement>document.querySelector('#lastNameError')).style.display = 'none';
@@ -57,10 +53,7 @@ function validateContactForm(e: any) {
     };
 
     // Email address:
-    const email: Element = document.querySelector("#email");
-    const emailError: Element = document.querySelector("#emailError");
-    const invalidEmailError: Element = document.querySelector("#invalidEmailError");
-    const emailValue: any = email.value;
+    const emailValue = (<HTMLInputElement>document.querySelector('#email')).value;
 
     if (checkInputLength(emailValue) === true) {
         (<HTMLElement>document.querySelector('#emailError')).style.display = 'none';
@@ -75,9 +68,7 @@ function validateContactForm(e: any) {
     };
 
     // Error message:
-    const message: Element = document.querySelector("#message");
-    const messageError: Element = document.querySelector("#messageError");
-    const messageValue: string = message.value;
+    const messageValue = (<HTMLInputElement>document.querySelector('#message')).value;
 
     if (checkInputLengthMessage(messageValue) === true) {
         (<HTMLElement>document.querySelector('#messageError')).style.display = 'none';
@@ -87,7 +78,7 @@ function validateContactForm(e: any) {
 };
 
 // Checking all the input values and using trim to make sure that the info is valid
-function checkInputLength(value: any) {
+function checkInputLength(value: string) {
     // Trim the value
     const trimmedValue = value.trim();
 
