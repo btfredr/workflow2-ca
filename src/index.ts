@@ -1,7 +1,7 @@
 // Making navigation menu responsive
 
-const menuBtn: Element = document.getElementsByClassName('menu-button')[0]
-const navItems: Element = document.getElementsByClassName('topNavigation-items')[0]
+const menuBtn = document.getElementsByClassName('menu-button')[0];
+const navItems = document.getElementsByClassName('topNavigation-items')[0];
 
 menuBtn.addEventListener('click', () => {
     navItems.classList.toggle('active')
@@ -78,7 +78,7 @@ function validateContactForm(e: any) {
 };
 
 // Checking all the input values and using trim to make sure that the info is valid
-function checkInputLength(value: string) {
+export function checkInputLength(value: string) {
     // Trim the value
     const trimmedValue = value.trim();
 
@@ -91,7 +91,7 @@ function checkInputLength(value: string) {
 };
 
 // Checking the length of the message, and making sure that it is equal to or more than ten characters
-function checkInputLengthMessage(value: string) {
+export function checkInputLengthMessage(value: string) {
     // trim the value
     const trimmedValue = value.trim();
 

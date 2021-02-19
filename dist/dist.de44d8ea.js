@@ -118,7 +118,11 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"dist/index.js":[function(require,module,exports) {
-// Making navigation menu responsive
+"use strict"; // Making navigation menu responsive
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 var menuBtn = document.getElementsByClassName('menu-button')[0];
 var navItems = document.getElementsByClassName('topNavigation-items')[0];
 menuBtn.addEventListener('click', function () {
@@ -209,6 +213,7 @@ function checkInputLength(value) {
   }
 }
 
+exports.default = checkInputLength;
 ; // Checking the length of the message, and making sure that it is equal to or more than ten characters
 
 function checkInputLengthMessage(value) {
@@ -230,7 +235,7 @@ function validateEmail(email) {
 }
 
 ;
-},{}],"../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"../../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -258,7 +263,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61082" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64627" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -434,5 +439,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","dist/index.js"], null)
+},{}]},{},["../../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","dist/index.js"], null)
 //# sourceMappingURL=/dist.de44d8ea.js.map

@@ -1,4 +1,7 @@
+"use strict";
 // Making navigation menu responsive
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.checkInputLengthMessage = exports.checkInputLength = void 0;
 var menuBtn = document.getElementsByClassName('menu-button')[0];
 var navItems = document.getElementsByClassName('topNavigation-items')[0];
 menuBtn.addEventListener('click', function () {
@@ -79,6 +82,7 @@ function checkInputLength(value) {
         return false;
     }
 }
+exports.checkInputLength = checkInputLength;
 ;
 // Checking the length of the message, and making sure that it is equal to or more than ten characters
 function checkInputLengthMessage(value) {
@@ -92,6 +96,7 @@ function checkInputLengthMessage(value) {
         return false;
     }
 }
+exports.checkInputLengthMessage = checkInputLengthMessage;
 ;
 // Checking that the email address is valid
 function validateEmail(email) {
