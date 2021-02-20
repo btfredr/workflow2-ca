@@ -26,4 +26,4 @@ The site can be ran either by using parcel or VS Code's live server feature. If 
 
 License: 
 
-ISC © Fredrik Fordelsen
+ISC © Fredrik Fordelsen 2021
