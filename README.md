@@ -24,6 +24,8 @@ Installation:
 
 The site can be ran either by using parcel or VS Code's live server feature. If you want to test the functions you can enter 'yarn run test' in the terminal.
 
+Functions and tests have been placed in it's own folder called 'functions'
+
 License: 
 
 ISC © Fredrik Fordelsen 2021
